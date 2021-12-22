@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aktivitäten</title>
+    <link rel="stylesheet" href="../css/activity.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+    </style>
+</head>
+<body>
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <a href="#" class="nav-logo">auxactivity</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <button class="act-btn">Aktivität hinzufügen</button>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">logout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">mein profil</a>
+                        <img src="../img/garmisch_2021_2.jpg">
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+            <article class="filter-area">
+                <!--Filter Bereich hier Stylen-->
+                <h2>Finde spannende Aktivitäten</h2>
+
+                <form class="form-inline" method="GET" action=".">
+                    <select class="select-wrapper fa fa-car" name="category_selected" aria-placeholder="Choose Category">
+                        <!--<select name="categoryies_selected" multiple>-->
+                            <option selected value = ""></option>
+                            <option value="ouside">outside</option>
+                            <option value="ouside">outside</option>
+                            <option value="ouside">outside</option>
+                    </select>
+                    <input class="searchbar" type="search" name="name_search" id="searchbar" placeholder="Search Activities...">
+                    <p><button class="srch-btn" type="submit">Filtern</button></p>
+                </form>
+            </article>
+        </header>
+        <main>
+            <article class="activity-area">
+                <!--Overview here-->
+                    <div class="activity-item">
+                        <!-- <img src="../img/garmisch_2021_2.jpg"> -->
+                        <img src="../img/garmisch_2021_2.jpg">
+                        <section class="category-area">
+                            <span class="category-item">Outside</span>
+                            <span class="category-item">Kostenlos</span>
+                            <span class="category-item">lustig</span>
+                        </section>
+                        <section class="activity-attributes">
+                            <h3>Picknick im Park</h3>
+                            <p>Park</p>
+                            <p>details</p>
+                            <button class="act-btn">Teilnehmen</button>
+
+                            <!-- <p id="creator">erstellt von lisab</p> -->
+                        </section>
+                    </div>
+            </article>
+        </main>
+
+        <script src="../js/script.js"></script>
+    </body>
+</html>
